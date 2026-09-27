@@ -1,56 +1,116 @@
-# Welcome to your Expo app 👋
+🌐 LanguageTutor
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+LanguageTutor is a language-learning chatbot application designed to help learners improve their English through interactive practice and personalized learning features.
 
-## Get started
+✨ Features
 
-1. Install dependencies
+- 💬 Conversation Practice
+- 📚 Grammar Exercises
+- 🧠 Vocabulary Learning
+- 🎤 Speaking Practice
+- 🔊 Pronunciation Practice
+- 📖 Reading Practice
+- ✍️ Writing Practice
+- 🎧 Listening Practice
+- 🎭 Real-life Scenarios
+- 🎮 Learning Game
+- 🧠 Personalized Lessons
+- ⭐ XP and Levels
+- 🔥 Daily Streaks
+- 🏆 Achievements
+- 📊 Learning Statistics
+- 🎯 Personalized Daily Goals
+- 📅 Learning History
+- 📜 Certificate
+- 🔔 Practice Reminders
+- 🔐 Supabase Authentication and Progress Sync
+- 🤖 Ollama-powered AI conversation support
 
-   ```bash
-   npm install
-   ```
+🛠️ Technologies Used
 
-2. Start the app
+- React / React Native
+- Expo
+- Expo Router
+- TypeScript
+- Supabase
+- Ollama
+- AsyncStorage
+- Expo Speech
+- Expo Speech Recognition
+- Expo Notifications
 
-   ```bash
-   npx expo start
-   ```
+📱 Android Build
 
-In the output, you'll find options to open the app in a
+The project can be built for Android using EAS Build.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+npx eas build --platform android --profile preview
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+For a production build:
 
-## Get a fresh project
+npx eas build --platform android --profile production
 
-When you're ready, run:
+💻 Running the Project
 
-```bash
-npm run reset-project
-```
+Install the dependencies:
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+npm install
 
-### Other setup steps
+Start the Expo development server:
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+npx expo start
 
-## Learn more
+🤖 Ollama
 
-To learn more about developing your project with Expo, look at the following resources:
+The application can use Ollama for local AI functionality.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Make sure Ollama is installed and the required model is available before using the AI conversation features.
 
-## Join the community
+Example:
 
-Join our community of developers creating universal apps.
+ollama list
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Keep in mind that when testing on a physical phone, "localhost" refers to the phone itself. The phone and computer need to be on the same network when connecting to an Ollama server running on the computer.
+
+🔐 Environment Variables
+
+Private environment variables should be stored in ".env.local" and must not be uploaded to GitHub.
+
+Do not publish:
+
+- Supabase service-role keys
+- Private API keys
+- Passwords
+- Authentication secrets
+- Other credentials
+
+🗂️ Project Structure
+
+LanguageTutor/
+├── src/
+│   └── app/
+│       └── index.tsx
+├── lib/
+│   └── supabase.ts
+├── assets/
+├── app.json
+├── eas.json
+├── package.json
+├── tsconfig.json
+├── .gitignore
+└── README.md
+
+🎯 Project Goal
+
+The goal of LanguageTutor is to provide an interactive learning environment where learners can practice different language skills, track their progress, and receive personalized learning support.
+
+👨‍💻 Project Status
+
+The project is actively developed and includes an Android build configuration through Expo Application Services (EAS).
+
+📌 Note for Evaluators
+
+Some AI functionality depends on a locally running Ollama server. Other application features can be tested independently through the application interface.
+
+---
+
+LanguageTutor — Learn, Practice, Improve. 🚀
